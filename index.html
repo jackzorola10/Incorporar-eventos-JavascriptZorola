@@ -5,32 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Radio CH-Jack</h1>
-    <h2>La unica radio enfocada 100% en musica para castores</h2>
+    <h1>Create your own playlist</h1>
+    
 
-
-    <section>
-        <p id="playlist">
-
-        </p>
+    <!-- INITIAL PLAYLIST -->
+    <p>Select from the songs below</p>
+    <section id="PlaylistSelection">
+        
+    </section>
+    
+    <!-- USER GENRE SELECTION -->
+    <h2>Select your genre</h2>
+    <section id="inputsForUserSong">
+        <form name="genreForm">
+            <select id="selectDeGenero" name="tema">
+                <option value="Rock">Rock</option>
+                <option value="Pop">Pop</option>
+                <option value="KPOP">KPOP</option>
+                <option value="Rap">Rap</option>
+            </select>      
+        </form>
     </section>
 
-
-    <!-- En esta zona inferior esta el codigo con el cual intente interactuar mas para fines del desafio, la sección "actionArea" es obtenida, borrada, recreada para fines del desafio.-->
-    <section id="actionArea">
-        <p>A los castores no les gusta que mezclemos generos, podrías seleccionar un genero para ellos? 
-            <br>
-            <br> 
-        Ej. Rock, Pop, KPOP, Rap</p>
-        <input type="text" id="genre" > 
-  
-        <button id="genreButton" type="button"  onclick="getValueInput()"> 
-            click me!! 
-        </button> 
+    <!-- FINAL PLAYLIST -->
+    <h2>Your selected songs will be shown here</h2>
+    <section id="FinalPlaylist">
+        
     </section>
+    
+    <!-- ARTIST TEST -->    
+    <h2>¿Quieres saber que artista de la playlist eres?</h2>
+    <p>Coloca tu mouse sobre la imagen (y no dejes de moverlo) y apartalo cuando te sientas listo para averiguarlo</p>
+
+    <section id="artistTest">
+        <h1 id="eres">Eres: </h1>
+        <img id="imageForTest" src="images/band0.jpg" alt="">
+    </section>
+
 
     <script src="script.js"></script>
+
+
+
 </body>
 </html>
