@@ -7,12 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>Create your own playlist</h1>
+<body id="all">
+    <h1>Create your own playlist & find out your sould artist</h1>
     
 
     <!-- INITIAL PLAYLIST -->
-    <p>Select from the songs below</p>
+    <p>Current playlist</p>
     <section id="PlaylistSelection">
         
     </section>
@@ -22,6 +22,7 @@
     <section id="inputsForUserSong">
         <form name="genreForm">
             <select id="selectDeGenero" name="tema">
+                <option value=""></option>
                 <option value="Rock">Rock</option>
                 <option value="Pop">Pop</option>
                 <option value="KPOP">KPOP</option>
@@ -42,7 +43,9 @@
 
     <section id="artistTest">
         <h1 id="eres">Eres: </h1>
+        <p id="responseOnEnter"></p>
         <img id="imageForTest" src="images/band0.jpg" alt="">
+        <p>Apolla a tu artista presionando ENTER y regalandole aplausos 👏🏼</p>
     </section>
 
 

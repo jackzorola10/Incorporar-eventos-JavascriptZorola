@@ -71,6 +71,10 @@ h2, p {
     float: right;
 }
 
+.tableAplausos {
+    float: right;
+}
+
 #artistTest img {
     display: block;
     margin-right: auto;
@@ -79,6 +83,29 @@ h2, p {
     min-width: 500px;
     max-height: 500px;
     min-width: 500px;
-
     border-radius: 1rem;
+}
+
+#inputsForUserSong {
+    margin-right: auto;
+    margin-left: auto;
+    width: 30%;
+    display: flexbox;
+
+}
+
+form {
+    -webkit-appearance: none;
+    text-align: center;
+}
+
+#selectDeGenero {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: large;
+    width: 6rem;
+    height: 3rem;
+    padding: .25rem;
+    border-radius: .5rem;
+    background-color: rgb(67, 147, 197);
+    color: aliceblue;
 }
